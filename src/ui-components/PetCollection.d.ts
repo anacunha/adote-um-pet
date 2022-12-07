@@ -5,12 +5,16 @@
  **************************************************************************/
 
 import * as React from "react";
-import { Pet } from "../models";
 import { EscapeHatchProps } from "@aws-amplify/ui-react/internal";
-import { FlexProps } from "@aws-amplify/ui-react";
-export declare type PetCardProps = React.PropsWithChildren<Partial<FlexProps> & {
-    pet?: Pet;
+import { PetCardProps } from "./PetCard";
+import { CollectionProps } from "@aws-amplify/ui-react";
+export declare type PetCollectionProps = React.PropsWithChildren<Partial<CollectionProps<any>> & {
+    items?: any[];
+    overrideItems?: (collectionItem: {
+        item: any;
+        index: number;
+    }) => PetCardProps;
 } & {
     overrides?: EscapeHatchProps | undefined | null;
 }>;
-export default function PetCard(props: PetCardProps): React.ReactElement;
+export default function PetCollection(props: PetCollectionProps): React.ReactElement;

@@ -9,7 +9,7 @@ import * as React from "react";
 import { getOverrideProps } from "@aws-amplify/ui-react/internal";
 import { Button, Flex, Image, Text } from "@aws-amplify/ui-react";
 export default function PetCard(props) {
-  const { overrides, ...rest } = props;
+  const { pet, overrides, ...rest } = props;
   return (
     <Flex
       gap="24px"
@@ -36,6 +36,7 @@ export default function PetCard(props) {
         borderRadius="160px"
         padding="0px 0px 0px 0px"
         objectFit="cover"
+        src={pet?.foto}
         {...getOverrideProps(overrides, "image")}
       ></Image>
       <Flex
@@ -68,7 +69,7 @@ export default function PetCard(props) {
           position="relative"
           padding="0px 0px 0px 0px"
           whiteSpace="pre-wrap"
-          children="Tempestade"
+          children={pet?.nome}
           {...getOverrideProps(overrides, "Tempestade")}
         ></Text>
         <Text
@@ -90,7 +91,7 @@ export default function PetCard(props) {
           position="relative"
           padding="0px 0px 0px 0px"
           whiteSpace="pre-wrap"
-          children="Adorável e indomável"
+          children={pet?.descricao}
           {...getOverrideProps(overrides, "Ador\u00E1vel e indom\u00E1vel")}
         ></Text>
       </Flex>

@@ -5,6 +5,7 @@
  **************************************************************************/
 
 export { default as PetCard } from "./PetCard";
+export { default as PetCollection } from "./PetCollection";
 export { default as studioTheme } from "./studioTheme";
 export { default as PetCreateForm } from "./PetCreateForm";
 export { default as PetUpdateForm } from "./PetUpdateForm";
