@@ -1,0 +1,15 @@
+{
+  "staging": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-adoteumpet-staging-40130-authRole",
+      "UnauthRoleArn": "arn:aws:iam::872422036680:role/amplify-adoteumpet-staging-40130-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::872422036680:role/amplify-adoteumpet-staging-40130-authRole",
+      "Region": "us-west-1",
+      "DeploymentBucketName": "amplify-adoteumpet-staging-40130-deployment",
+      "UnauthRoleName": "amplify-adoteumpet-staging-40130-unauthRole",
+      "StackName": "amplify-adoteumpet-staging-40130",
+      "StackId": "arn:aws:cloudformation:us-west-1:872422036680:stack/amplify-adoteumpet-staging-40130/d5260ca0-75e3-11ed-b9e0-025ae8281e41",
+      "AmplifyAppId": "d1nt4qvyu8ziv1"
+    }
+  }
+}
